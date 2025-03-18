@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People - Mobility Lab</title>
     <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: white; color: black; text-align: center; }
-header { background: #BA0C2F; color: white; padding: 20px; }
-footer { background: #BA0C2F; color: white; padding: 20px; }
-nav a { margin: 15px; color: white; text-decoration: none; }
-section { padding: 40px; max-width: 900px; margin: auto; text-align: left; }
-h1 { font-size: 32px; }
-h2 { font-size: 28px; }
-p, li { font-size: 20px; }
-</style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: white; color: black; text-align: center; }
+        header { background: #BA0C2F; color: white; padding: 20px; }
+        footer { background: #BA0C2F; color: white; padding: 20px; }
+        nav a { margin: 15px; color: white; text-decoration: none; }
+        section { padding: 40px; max-width: 900px; margin: auto; text-align: left; }
+        h1 { font-size: 32px; text-align: center; }
+        h2 { font-size: 28px; margin-top: 30px; }
+        p, li { font-size: 20px; }
+        
+        /* Styling for profile items */
+        .profile { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+        .profile img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+        .profile-text { flex: 1; }
+
+    </style>
 </head>
 <body>
     <header>
@@ -30,31 +36,32 @@ p, li { font-size: 20px; }
     
     <section>
         <h2>Director</h2>
-            <li>
-                <img src="images/dr_yao.jpg" alt="Dr. Handong Yao" width="100" height="100" style="border-radius: 100%;">
-                <strong>Dr. Handong Yao</strong> - Assistant Professor, University of Georgia
-            </li>
-        
+        <div class="profile">
+            <img src="images/dr_yao.jpg" alt="Dr. Handong Yao">
+            <p class="profile-text"><strong>Dr. Handong Yao</strong> - Assistant Professor, University of Georgia</p>
+        </div>
+
         <h2>PhD Students</h2>
-        <ul>
-            <li>
-                <img src="images/tianle_zhu.jpg" alt="Tianle Zhu" width="100" height="100" style="border-radius: 100%;">
-                Tianle Zhu, Fall 2024 - present
-            </li>
-            <li>
-                <img src="images/xuan_wang.jpg" alt="Xuan Wang" width="100" height="100" style="border-radius: 100%;">
-                Xuan Wang, Fall 2024 - present
-            </li>
-        </ul>
-        
+        <div class="profile">
+            <img src="images/tianle_zhu.jpg" alt="Tianle Zhu">
+            <p class="profile-text">Tianle Zhu, Fall 2024 - present</p>
+        </div>
+        <div class="profile">
+            <img src="images/xuan_wang.jpg" alt="Xuan Wang">
+            <p class="profile-text">Xuan Wang, Fall 2024 - present</p>
+        </div>
+
         <h2>Young Dawgs Intern</h2>
-        <ul>
-            <li>James Volfson (North Oconee High School), Spring 2025</li>
-        </ul>
+        <div class="profile">
+            <img src="images/james_volfson.jpg" alt="James Volfson">
+            <p class="profile-text">James Volfson (North Oconee High School), Spring 2025</p>
+        </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Mobility Lab, University of Georgia</p>
     </footer>
 </body>
 </html>
+"""
+
